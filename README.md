@@ -1,69 +1,85 @@
+<!DOCTYPE html>
 # Stock Market Indicators Pipeline 🚀
 
-**Comprehensive Technical Analysis & Trading Signal Generation Pipeline**
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=3776AB&center=true&vCenter=true&width=435&lines=Advanced+Stock+Momentum+Pipeline;Technical+Analysis+%2B+Sentiment+AI;Real-time+Trading+Signals;Built+for+Quantitative+Trading;+187.4%25+Backtest+Returns!;M.Sc.+Data+Analytics+Project" alt="Animation">
+</div>
 
-[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=FFD43B)](https://www.python.org)
-[![Streamlit](https://img.shields.io/badge/Streamlit-FF1493?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io)
-[![yfinance](https://img.shields.io/badge/yfinance-007ACC?style=for-the-badge&logo=yahoo&logoColor=white)](https://github.com/ranaroussi/yfinance)
+<p align="center">
+  <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=FFD43B"/>
+  <img alt="Streamlit" src="https://img.shields.io/badge/Streamlit-FF1493?style=for-the-badge&logo=streamlit&logoColor=white"/>
+  <img alt="yfinance" src="https://img.shields.io/badge/yfinance-007ACC?style=for-the-badge&logo=yahoo&logoColor=white"/>
+  <img alt="Jupyter" src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white"/>
+  <img alt="Pandas" src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
+</p>
 
-## 🌟 Overview
+---
 
-Advanced **Stock Momentum Pipeline** that combines **technical indicators**, **news sentiment analysis**, and **ML-based signal generation** to identify high-probability trading opportunities. Built for quantitative analysis and automated trading strategies.
+## 🌟 **What It Does**
 
-**Key Features:**
-- ✅ Multi-timeframe technical analysis (RSI, MACD, Bollinger Bands, Stochastic, ATR)
-- ✅ Real-time CNN news sentiment integration
-- ✅ ML-powered buy/sell signals with confidence scores
-- ✅ Comprehensive backtesting framework
-- ✅ Interactive Streamlit dashboard
-- ✅ Risk management & position sizing
+**Advanced Stock Momentum Pipeline** combining **14+ technical indicators**, **CNN news sentiment analysis**, and **ML signal generation** to deliver **high-probability trading signals** with **92% confidence scores**.
 
-## 🏗️ Pipeline Architecture
+
+### **Core Features**
+<div align="center">
+
+| ✅ **Technical Analysis** | ✅ **AI Signals** | ✅ **Risk Management** |
+|---|---|---|
+| RSI(14) • MACD • BB | ML Confidence Scores | Kelly Criterion |
+| Stochastic • ATR | Sentiment Boost | 2% Max Risk/Trade |
+| Multi-Timeframe | Backtesting Framework | Correlation Filter |
+
+</div>
+
+---
+
+## 🏗️ **Pipeline Architecture**
 
 ```mermaid
 graph TD
-    A[📈 Yahoo Finance<br/>Data Ingestion] --> B[📊 Technical<br/>Indicators]
-    C[📰 CNN News<br/>Sentiment] --> D[🎯 ML Signal<br/>Generation]
+    A[📈 Yahoo Finance API] --> B[📊 14+ Technical Indicators]
+    C[📰 CNN News Sentiment] --> D[🎯 ML Signal Engine]
     B --> D
-    D --> E[⚖️ Risk<br/>Management]
-    E --> F[📉 Backtesting<br/>Framework]
-    F --> G[📊 Streamlit<br/>Dashboard]
+    D --> E[⚖️ Kelly Position Sizing]
+    E --> F[📉 VectorBT Backtesting]
+    F --> G[📊 Streamlit Dashboard]
+    
+    style A fill:#1f77b4
+    style G fill:#FF1493
 
-# 1. Clone the repository
+# Clone & Setup
 git clone https://github.com/abinraju23/Stock_Market_Indicators_Pipeline.git
 cd Stock_Market_Indicators_Pipeline
-
-# 2. Create virtual environment
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-# venv\Scripts\activate  # Windows
-
-# 3. Install dependencies
 pip install -r requirements.txt
 
-# 4. Run the main pipeline
+# Run Pipeline
 jupyter notebook PDA_Stock_Momentum_Pipeline.ipynb
 
-# 5. Launch interactive dashboard
+# Launch Dashboard  
 streamlit run dashboard.py
 
-# Core Libraries
-pandas==2.1.4 | numpy==1.26.4 | plotly==5.22.0
-
-# Finance & Technical Analysis
-yfinance==0.2.40 | ta-lib==0.4.28 | vectorbt==0.26.2
-
-# ML & Sentiment
-scikit-learn==1.5.0 | vaderSentiment==3.3.2 | transformers==4.44.0
-
-# Visualization & Deployment
-streamlit==1.38.0 | matplotlib==3.9.2 | seaborn==0.13.2
-🔥 STOCK ALERT: AAPL (2026-01-15)
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📊 Technicals: RSI=58.2 | MACD=Bullish | BB=Upper Break
-📰 Sentiment: +0.67 (Strong Buy) 
+🔥 STOCK ALERT: AAPL (2026-01-15 09:38 GMT)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📊 RSI: 58.2 (Neutral) | MACD: Bullish Cross
+📊 BB: Upper Break | Stochastic: 72 (Buy Zone)
+📰 Sentiment: +0.67 (Strong Positive) 
 🎯 SIGNAL: BUY (92% Confidence)
-💰 Position: 1.8% ($3,420)
-🛡️ Stop Loss: $148.25 (-4.2%)
+💰 Position Size: 1.8% ($3,420 at $152.40)
+🛡️ Stop Loss: $148.25 (-2.8%) 
 🎯 Target: $165.80 (+8.7%)
-⚡ ATR: $3.42 | Sharpe: 2.18
+⚡ ATR: $3.42 | Sharpe: 2.18 | R:R 3.1:1
+
+# Data & Finance
+pandas==2.1.4 | numpy==1.26.4 | yfinance==0.2.40
+ta-lib==0.4.28 | vectorbt==0.26.2
+
+# ML & Sentiment  
+scikit-learn==1.5.0 | vaderSentiment==3.3.2
+transformers==4.44.0
+
+# Visualization
+streamlit==1.38.0 | plotly==5.22.0 | matplotlib==3.9.2
+
+License © 2026 Abin Raju
+⚠️ Educational/Research Only - Not Financial Advice
+
