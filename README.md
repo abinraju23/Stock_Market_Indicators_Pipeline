@@ -33,20 +33,6 @@
 
 ---
 
-## 🏗️ **Pipeline Architecture**
-
-```mermaid
-graph TD
-    A[📈 Yahoo Finance API] --> B[📊 14+ Technical Indicators]
-    C[📰 CNN News Sentiment] --> D[🎯 ML Signal Engine]
-    B --> D
-    D --> E[⚖️ Kelly Position Sizing]
-    E --> F[📉 VectorBT Backtesting]
-    F --> G[📊 Streamlit Dashboard]
-    
-    style A fill:#1f77b4
-    style G fill:#FF1493
-
 # Clone & Setup
 git clone https://github.com/abinraju23/Stock_Market_Indicators_Pipeline.git
 cd Stock_Market_Indicators_Pipeline
